@@ -713,7 +713,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 }
 
 /*?------------------------------------privilages--------------------------------------- */
-.item-title {
+.privilages .item-title {
     letter-spacing: 0.02em;
     color: var(--background-color-text);
     margin-bottom: 8px;
@@ -731,7 +731,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
         display: none;
     }
 
-    .item-title {
+    .privilages .item-title {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
@@ -748,7 +748,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
         margin-bottom: 72px;
     }
 
-    .item-title {
+    .privilages .item-title {
         text-align: center;
     }
 
@@ -789,7 +789,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
         margin-bottom: 8px;
     }
 
-    .item-title {
+    .privilages .item-title {
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
