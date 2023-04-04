@@ -237,9 +237,15 @@ address {
 
         background: var(--color-accent-text);
         border-radius: 50%;
-        border: 1px solid var(--background-color-text);
+        border: 1px solid rgba(0, 0, 0, 0.1);
 
         transition: background var(--time-transition-duration) var(--transition-timing-function);
+    }
+
+    .close-btn.js-close-menu:hover,
+    .close-btn.js-close-menu:focus {
+        background-color: var(--color-pressed-state);
+        border: none;
     }
 
     .js-open-menu {
@@ -296,12 +302,19 @@ address {
     }
 
     .navigation-items>.link {
-        padding: 20px 0;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
         letter-spacing: 0.02em;
         color: var(--background-color-text);
+    }
+
+    .navigation-items:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .link.active {
+        color: var(--color-pressed-state);
     }
 }
 
@@ -465,6 +478,12 @@ address {
     border: 1px solid rgba(0, 0, 0, 0.1);
 
     transition: background var(--time-transition-duration) var(--transition-timing-function);
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    background: var(--color-pressed-state);
+    border: none;
 }
 
 .icon-close-btn {
@@ -656,7 +675,7 @@ screen and (max-width: 767px) and (min-resolution: 2dppx) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../images/hero-mobile/hero-bg@2x.jpg)h;
+            url(../images/hero-mobile/hero-bg@2x.jpg);
     }
 }
 
